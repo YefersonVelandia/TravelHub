@@ -7,7 +7,11 @@
     "build": "tsc",
     "start": "node dist/server.js",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "migration:generate": "sequelize-cli migration:generate",
+    "migration:run": "sequelize-cli db:migrate",
+    "migration:undo": "sequelize-cli db:migrate:undo",
+    "migration:undo:all": "sequelize-cli db:migrate:undo:all"
   },
   "keywords": [],
   "author": "YefersonVelandia",
